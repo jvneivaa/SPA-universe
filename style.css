@@ -1,0 +1,141 @@
+/* INDEX */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+:root {
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+}
+
+body {
+    background-image: url(./img/mountains-universe-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+nav {
+    padding: 4.0rem 7.2rem;
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 2.2rem;
+    opacity: 0.3;
+}
+
+nav a.active {
+    opacity: 1;
+    font-weight: bold;
+} 
+
+/* HOME */
+
+.home {
+    display: grid;
+    place-content: center;
+    justify-items: center;
+}
+
+.home h1 {
+    color: #FFF;
+    font-size: 4.8rem;
+    margin-top: 15rem;
+    margin-bottom: 2.4rem;
+}
+
+.home button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.2rem 3.2rem;
+    color: #FFF;
+    background: transparent;
+    border: 1px solid #FFF;
+    border-radius: .5rem;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 2.4rem;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.home button:hover {
+    color: #02799D;
+    background-color: #FFF;
+}
+
+/* THE UNIVERSE */
+
+.the-universe {
+    width: 50%;
+    margin-left: 10.2rem;
+    margin-top: 12rem;
+}
+
+.the-universe h2 {
+    font-size: 4.8rem;
+    font-weight: bold;
+    color: #FFF;
+    margin-bottom: 1.6rem;
+}
+
+.the-universe p {
+    color: #FFF;
+    font-size: 1.8rem;
+    line-height: 160%;
+    text-align: justify;
+}
+
+
+/* Media Query para telas menores, como dispositivos móveis */
+@media only screen and (max-width: 768px) {
+    nav {
+        padding: 2rem; 
+        gap: 2rem; 
+    }
+
+    nav a {
+        font-size: 1.6rem; 
+    }
+
+    .home h1 {
+        font-size: 3.6rem; 
+        margin-top: 10rem; 
+        margin-bottom: 1.6rem; 
+    }
+
+    .home button {
+        padding: 1rem 2.4rem; 
+        font-size: 1.2rem; 
+        line-height: 2rem; 
+    }
+
+    .the-universe {
+        width: 90%; 
+        margin-left: 2rem; 
+        margin-top: 8rem; 
+    }
+
+    .the-universe h2 {
+        font-size: 3.6rem; 
+        margin-bottom: 1.2rem; 
+    }
+
+    .the-universe p {
+        font-size: 1.6rem; 
+    }
+}
